@@ -1,7 +1,7 @@
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
-import { config } from "dotenv";
+// import { config } from "dotenv";
 import router from "./router/route.js";
 
 /** import connection file */
@@ -13,7 +13,7 @@ const app = express();
 app.use(morgan("tiny"));
 app.use(cors());
 app.use(express.json());
-config();
+// config();
 
 /** appliation port */
 const port = 8080;
